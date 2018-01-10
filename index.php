@@ -12,9 +12,9 @@
     $loader = new Twig_Loader_Filesystem(__DIR__ . '/views');
     $twig = new Twig_Environment($loader);
 
-    // $router = new \Bookstore\Core\Router();
-    // $response = $router->route(new Request());
-    // echo $response;
+    $router = new \Bookstore\Core\Router();
+    $response = $router->route(new Request());
+    echo $response;
 
     // $bookModel = new BookModel(Db::getInstance());
     // $books = $bookModel->getAll(1, 3);
